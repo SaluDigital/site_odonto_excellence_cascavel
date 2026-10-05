@@ -263,6 +263,7 @@ section[id] { scroll-margin-top: var(--header-h); }
 /* Mobile: texto compacto na base (até ~45% da tela) para não cobrir o rosto */
 @media (max-width: 559px) {
   .hero { padding-bottom: 1.75rem; }
+  .hero__media img { object-position: calc(72% - 100px) 30%; }
   .hero__eyebrow { margin-bottom: 0.9rem; font-size: 0.6875rem; letter-spacing: 0.12em; }
   .hero__title { max-width: none; }
   .hero__text { display: none; }
