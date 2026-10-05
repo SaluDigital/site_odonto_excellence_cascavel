@@ -264,6 +264,11 @@ section[id] { scroll-margin-top: var(--header-h); }
 @media (max-width: 559px) {
   .hero { padding-bottom: 1.75rem; }
   .hero__media img { object-position: calc(72% - 100px) 30%; }
+  .hero__overlay {
+    background: linear-gradient(to bottom,
+      rgba(14, 14, 15, 0.7) 0, rgba(14, 14, 15, 0) 150px,
+      rgba(14, 14, 15, 0) 42%, rgba(14, 14, 15, 0.6) 62%, rgba(14, 14, 15, 0.9) 100%);
+  }
   .hero__eyebrow { margin-bottom: 0.9rem; font-size: 0.6875rem; letter-spacing: 0.12em; }
   .hero__title { max-width: none; }
   .hero__text { display: none; }
