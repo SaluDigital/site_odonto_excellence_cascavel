@@ -614,6 +614,10 @@ html:not(.js) .clinic-video__play { display: none; }
 .final-cta__title { font-size: clamp(1.75rem, 1.1rem + 2.4vw, 2.75rem); line-height: 1.06; font-weight: 700; letter-spacing: -0.035em; max-width: 16ch; text-wrap: balance; }
 .final-cta__side { display: grid; gap: 2rem; justify-items: start; }
 .final-cta__text { font-size: 1.0625rem; max-width: 42ch; color: rgba(255, 255, 255, 0.92); }
+@media (max-width: 639px) {
+  .final-cta__inner { justify-items: center; text-align: center; }
+  .final-cta__side { justify-items: center; }
+}
 
 
 /* ---------- Footer ---------- */
