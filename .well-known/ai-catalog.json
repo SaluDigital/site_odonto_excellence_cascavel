@@ -1,0 +1,46 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Odonto Excellence Santa Cruz",
+    "documentationUrl": "https://odontoexcellencesantacruz.com.br/",
+    "logoUrl": "https://odontoexcellencesantacruz.com.br/assets/logo-odonto-excellence.webp"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:odontoexcellencesantacruz.com.br:site:home",
+      "displayName": "Odonto Excellence Santa Cruz",
+      "type": "text/html",
+      "url": "https://odontoexcellencesantacruz.com.br/",
+      "description": "Site institucional da clinica odontologica Odonto Excellence Santa Cruz em Cascavel/PR.",
+      "tags": [
+        "odontologia",
+        "dentista",
+        "cascavel",
+        "santa-cruz",
+        "clinica-odontologica"
+      ],
+      "capabilities": [
+        "informacoes-institucionais",
+        "tratamentos-odontologicos",
+        "contato-whatsapp",
+        "localizacao"
+      ]
+    },
+    {
+      "identifier": "urn:air:odontoexcellencesantacruz.com.br:site:llms",
+      "displayName": "LLMS.txt da Odonto Excellence Santa Cruz",
+      "type": "text/markdown",
+      "url": "https://odontoexcellencesantacruz.com.br/llms.txt",
+      "description": "Resumo estruturado do site para leitura por modelos de linguagem e agentes de IA.",
+      "tags": [
+        "llms.txt",
+        "ai-discovery",
+        "indexacao"
+      ],
+      "capabilities": [
+        "descoberta-de-conteudo",
+        "resumo-do-site"
+      ]
+    }
+  ]
+}

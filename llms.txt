@@ -1,0 +1,16 @@
+# Odonto Excellence Santa Cruz
+
+> Clinica odontologica no bairro Santa Cruz, em Cascavel/PR, com atendimento em clinica geral, endodontia, ortodontia, cirurgia odontologica, implantes e proteses.
+
+## Paginas principais
+
+- [Pagina inicial](https://odontoexcellencesantacruz.com.br/) - Informacoes institucionais, tratamentos, equipe, endereco, horario de atendimento e contatos da Odonto Excellence Santa Cruz.
+- [Tratamentos](https://odontoexcellencesantacruz.com.br/#tratamentos) - Lista de tratamentos odontologicos oferecidos pela unidade.
+- [Equipe](https://odontoexcellencesantacruz.com.br/#equipe) - Profissionais da clinica e responsavel tecnico.
+- [Contato](https://odontoexcellencesantacruz.com.br/#contato) - Endereco, WhatsApp, mapa e horarios de atendimento.
+
+## Arquivos de indexacao
+
+- [Sitemap XML](https://odontoexcellencesantacruz.com.br/sitemap.xml) - Mapa do site para mecanismos de busca.
+- [Robots.txt](https://odontoexcellencesantacruz.com.br/robots.txt) - Politica de rastreamento do site.
+- [AI Catalog](https://odontoexcellencesantacruz.com.br/ai-catalog.json) - Manifesto JSON para descoberta por agentes de IA.
