@@ -17,10 +17,7 @@ New-Item -ItemType Directory -Path $dist | Out-Null
 Copy-Item -LiteralPath (Join-Path $projectRoot "index.html") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot "robots.txt") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot "sitemap.xml") -Destination $dist
+Copy-Item -LiteralPath (Join-Path $projectRoot ".htaccess") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot "assets") -Destination $dist -Recurse
 Copy-Item -LiteralPath (Join-Path $projectRoot "css") -Destination $dist -Recurse
 Copy-Item -LiteralPath (Join-Path $projectRoot "js") -Destination $dist -Recurse
-
-$distOpenAi = Join-Path $dist ".openai"
-New-Item -ItemType Directory -Path $distOpenAi | Out-Null
-Copy-Item -LiteralPath (Join-Path $projectRoot ".openai\hosting.json") -Destination (Join-Path $distOpenAi "hosting.json")
