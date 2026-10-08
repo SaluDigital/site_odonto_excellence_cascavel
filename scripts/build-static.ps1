@@ -20,6 +20,7 @@ Copy-Item -LiteralPath (Join-Path $projectRoot "sitemap.xml") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot "llms.txt") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot "ai-catalog.json") -Destination $dist
 Copy-Item -LiteralPath (Join-Path $projectRoot ".htaccess") -Destination $dist
+Copy-Item -LiteralPath (Join-Path $projectRoot "assets\favicon.png") -Destination (Join-Path $dist "favicon.png")
 Copy-Item -LiteralPath (Join-Path $projectRoot "assets") -Destination $dist -Recurse
 Copy-Item -LiteralPath (Join-Path $projectRoot "css") -Destination $dist -Recurse
 Copy-Item -LiteralPath (Join-Path $projectRoot "js") -Destination $dist -Recurse
