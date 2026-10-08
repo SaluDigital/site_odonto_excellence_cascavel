@@ -469,6 +469,79 @@ html:not(.js) .clinic-video__play { display: none; }
   font-size: 0.8125rem; font-weight: 600; background: var(--white);
 }
 .team-card__bio { margin-top: 1.25rem; font-size: 0.9375rem; line-height: 1.65; color: var(--muted); text-wrap: pretty; }
+.team-support {
+  position: relative;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding: clamp(1rem, 2vw, 1.25rem);
+  background: var(--white);
+  box-shadow: 0 24px 70px rgba(20, 20, 20, 0.08);
+}
+.team-support::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--red);
+}
+.team-support__photo {
+  aspect-ratio: 4 / 3;
+  min-height: 260px;
+}
+.team-support__photo img { object-position: 48% 30%; }
+.team-support__content {
+  display: grid;
+  align-content: center;
+  padding: 0.5rem clamp(0.25rem, 2vw, 1.5rem) clamp(0.5rem, 2vw, 1.5rem);
+}
+.team-support__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.team-support__title {
+  max-width: 18ch;
+  margin-top: 0.7rem;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.team-support__people {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+}
+.team-support__person {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.team-support__person::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  bottom: 0.3rem;
+  width: 1px;
+  background: var(--red);
+}
+.team-support__name {
+  font-size: clamp(1.25rem, 1.1rem + 0.4vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.team-support__text {
+  margin-top: 0.55rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--muted);
+  text-wrap: pretty;
+}
 
 @media (min-width: 640px) and (max-width: 899px) {
   .team-card { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: 2rem; align-items: start; }
@@ -476,6 +549,19 @@ html:not(.js) .clinic-video__play { display: none; }
 }
 @media (min-width: 900px) {
   .team__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: clamp(1.75rem, 3vw, 3rem); }
+  .team-support {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    align-items: stretch;
+  }
+  .team-support__photo { min-height: 420px; }
+  .team-support__content { padding-block: clamp(1.5rem, 4vw, 3rem); }
+}
+@media (min-width: 1120px) {
+  .team-support {
+    grid-template-columns: minmax(0, 5.5fr) minmax(0, 6.5fr);
+    padding: 1.5rem;
+  }
+  .team-support__people { gap: 1.65rem; }
 }
 
 /* ---------- 06 · Jornada ---------- */
